@@ -30,17 +30,8 @@ Take a minute to peruse the source code on your own.
 
 Python is an object-oriented programming language. You'll hear people say that "everything is an object" in Python. What does this mean?
 
-Go back to the idea of a function for a moment. A function is a kind of abstraction whereby an algorithm is made repeatable. So instead of coding:
-
-or even:
-
-I can write:
-
-Now imagine a further abstraction: Before, creating a function was about making a certain algorithm available to different inputs. Now I want to make that function available to different **objects**.
 
 Even Python integers are objects. Consider:
-
-We can see what type of object a variable is with the built-in type operator:
 
 By setting x equal to an integer, I'm imbuing x with the methods of the integer class.
 
@@ -159,7 +150,7 @@ example.swapcase().replace('0','o').strip().replace('?','!')
 
 
 
-# 4. Describe the relationship of classes and objectes, and learn to code classes
+# 4. Describe the relationship of classes and objects, and learn to code classes
 
 Each object is an instance of a **class** that defines a bundle of attributes and functions (now, as proprietary to the object type, called *methods*), the point being that **every object of that class will automatically have those proprietary attributes and methods**.
 
@@ -167,6 +158,8 @@ A class is like a blueprint that describes how to create a specific type of obje
 
 ![blueprint](img/blueprint.jpeg)
 
+
+# Classes 
 
 ## Classes
 
