@@ -48,13 +48,6 @@ Use the [documentation](https://docs.python.org/3/library/stdtypes.html#string-m
 example.swapcase().replace('0','o').strip().replace('?','!')
 ```
 
-
-
-
-    'Hello, World!'
-
-
-
 # Fun Detour About How Python Works
 
 Python is dynamically typed, meaning you don't have to instruct it as to what type of object your variable is.  
@@ -83,16 +76,6 @@ print(df.dtypes)
 print(df.T)
 ```
 
-    Index(['price', 'sqft'], dtype='object')
-    RangeIndex(start=0, stop=3, step=1)
-    price    int64
-    sqft     int64
-    dtype: object
-              0    1    2
-    price    50   40   30
-    sqft   1000  950  500
-
-
 A **method** is what we call a function attached to an object
 
 What other DataFrame methods do we know?
@@ -104,53 +87,6 @@ df.copy()
 df.head()
 df.tail()
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>price</th>
-      <th>sqft</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>50</td>
-      <td>1000</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>40</td>
-      <td>950</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>30</td>
-      <td>500</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 # 4. Describe the relationship of classes and objects, and learn to code classes
 
@@ -191,7 +127,7 @@ We can also pass default arguments if there is a value for a certain parameter w
 
  Let's bring our knowledge together, and in pairs, code out the following:
 
-We have an attribute `moving` which indicates, with a boolean, whether the car is moving or not.  
+Add an attribute `moving` to the __init__ function, which indicates, with a boolean, whether the car is moving or not.  
 
 Fill in the functions stop and go to change the attribute `moving` to reflect the car's present state of motion after the method is called.  Also, include a print statement that indicates the car has started moving or has stopped.
 
@@ -269,32 +205,13 @@ mss.fit_transform(series_1)[:5]
 ```
 
 
-
-
-    [0.48775857171297654,
-     -0.16102190351705759,
-     0.6420145667955479,
-     1.53638248233551,
-     -0.2589952415079247]
-
-
-
-
 ```python
 print(mss.scale_)
 print(ss.scale_[0])
 ```
-
-    0.9787262077473544
-    0.9787262077473542
-
 
 
 ```python
 print(mss.mean_)
 print(ss.mean_[0])
 ```
-
-    3.0193320558223253
-    3.0193320558223253
-
